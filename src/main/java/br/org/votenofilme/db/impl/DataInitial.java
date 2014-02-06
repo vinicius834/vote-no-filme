@@ -1,4 +1,4 @@
-﻿package br.org.votenofilme.db.impl;
+package br.org.votenofilme.db.impl;
 
 import java.util.List;
 import br.org.votenofilme.models.Film;
@@ -10,14 +10,14 @@ public class DataInitial {
 	private Film film3 = null;
 	private Film film4 = null;
 	private static DataInitial dataInitial = null;
-	
+
 	public static DataInitial getInstance() {
 		if (dataInitial == null) {
 			dataInitial = new DataInitial();
 		}
 		return dataInitial;
 	}
-	
+
 	public DataInitial() {
 		insertData();
 	}
@@ -30,13 +30,13 @@ public class DataInitial {
 			film2 = new Film("Clube da Luta", "/assets/images/clubedaluta.jpg");
 			film3 = new Film("A Origem", "/assets/images/aorigem.jpg");
 			film4 = new Film("Lobo de Wall Street", "/assets/images/lobo.jpg");
-			
+
 			film.save();
 			film1.save();
 			film2.save();
 			film3.save();
 			film4.save();
 		}
-		
+
 	}
 }
