@@ -7,6 +7,7 @@ import org.junit.Test;
 
 
 
+import br.org.votenofilme.db.impl.DAOImpl;
 import br.org.votenofilme.models.Film;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class DAOTest {
 	private Film film = null;
 	private Film film1 = null;
 	private Film film2 = null;
-	private static final DAO<Film, Long> DAO = new DAO<Film, Long>(Film.class);
+	private static final DAOImpl<Film, Long> DAO = new DAOImpl<Film, Long>(Film.class);
 	
 	@Before
 	public void setUp() throws Exception {

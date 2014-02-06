@@ -15,13 +15,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import br.org.votenofilme.db.DAO;
+import br.org.votenofilme.db.impl.DAOImpl;
 
 @Entity
 @Table(name="PERSON")
 public class Person implements Serializable {
 
-	private static final DAO<Person, Long> DAO = new DAO<Person, Long>(Person.class);
+	private static final DAOImpl<Person, Long> DAO = new DAOImpl<Person, Long>(Person.class);
 	
 	@Id
 	@Column(name = "PERSON_ID")
@@ -99,12 +99,6 @@ public class Person implements Serializable {
 		return DAO.list();
 	}
 	
-	public static Person findByName(String personName) {
-		StringBuilder query = new StringBuilder("from Person person ");
-		query.append("where person.name = " + "\"" + personName + "\"");
-		return DAO.findByQuery(query);
-	}
-
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;

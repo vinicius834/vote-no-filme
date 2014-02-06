@@ -14,13 +14,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import br.org.votenofilme.db.DAO;
+import br.org.votenofilme.db.impl.DAOImpl;
 
 @Entity
 @Table(name="FILM")
 public class Film implements Serializable {
 
-	private static final DAO<Film, Long> DAO = new DAO<Film, Long>(Film.class);
+	private static final DAOImpl<Film, Long> DAO = new DAOImpl<Film, Long>(Film.class);
 	
 	@Id
 	@Column(name="FILM_ID")
