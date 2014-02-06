@@ -26,7 +26,7 @@ public class DataInitial {
 		List<Film> films = (List<Film>) Film.list();
 		if (films.isEmpty()) {
 			film = new Film("Velozes e Furiosos", "/assets/images/velozesefuriosos.jpg");
-			film1 = new Film("O Poderoso Chef�o", "/assets/images/opoderosochefao.jpg");
+			film1 = new Film("O Poderoso Chefão", "/assets/images/opoderosochefao.jpg");
 			film2 = new Film("Clube da Luta", "/assets/images/clubedaluta.jpg");
 			film3 = new Film("A Origem", "/assets/images/aorigem.jpg");
 			film4 = new Film("Lobo de Wall Street", "/assets/images/lobo.jpg");
