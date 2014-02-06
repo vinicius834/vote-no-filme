@@ -1,0 +1,11 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	overflow-y:hidden;
+	background: #202020;
+}
+
+#div_content {
+	background: #202020;
+	text-align: center;
+}

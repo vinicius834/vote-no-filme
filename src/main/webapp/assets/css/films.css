@@ -1,0 +1,81 @@
+#div_content_filmvote {
+	margin-top: 30px;
+}
+
+#div_films {
+	margin-top: 20px;
+	height: 400px;
+}
+
+#div_film1 {
+	width: 300px;
+	height: 390px;
+	margin: 0 auto;
+}
+
+#div_film2 {
+	width: 300px;
+	height: 390px;
+	margin: 0 auto;
+}
+
+#div_button {
+	margin-top: 40px;
+}
+
+#div_info_person  {
+	display: none;
+}
+
+#div_button_confirma {
+	display: none;
+}
+
+#img_film1 {
+	border-radius: 7px;
+	width:300px; 
+	height: 390px;
+}
+
+#img_film2 {
+	border-radius: 7px;
+	width:300px; 
+	height: 390px;
+}
+
+#div_titulo_pergunta {
+	font-family: ""Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 5px;
+	color: rgb(16,16,16);
+}
+
+#div_error_info_person {
+	width: 566px;
+	margin: 0 auto;
+}
+
+#div_person_name_error {
+	position:relative;
+	max-width: 230px;
+}
+
+#div_person_email_error {
+	margin-left:290px;
+	max-width: 230px;
+}
+
+#div_ranking {
+	display: none;
+}
+
+#div_general_ranking {
+	width: 800px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#div_person_ranking {
+	width: 800px;
+	height: 300px;
+	margin: 0 auto;
+}
