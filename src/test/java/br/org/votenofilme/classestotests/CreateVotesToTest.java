@@ -2,7 +2,6 @@ package br.org.votenofilme.classestotests;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import br.org.votenofilme.models.Film;
 import br.org.votenofilme.models.FilmPersonVote;
 import br.org.votenofilme.models.FilmVote;

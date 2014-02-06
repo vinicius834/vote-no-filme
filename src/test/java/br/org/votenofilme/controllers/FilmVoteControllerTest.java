@@ -38,7 +38,6 @@ public class FilmVoteControllerTest {
 		filmsVotedPerson1 = new ArrayList<FilmVote>();
 		filmsVotedPerson2 = new ArrayList<FilmVote>();
 		
-		
 		film = new Film("Velozes e Furiosos 1", "");
 		film1 = new Film("Velozes e Furiosos 2", "");
 		film2 = new Film("Velozes e Furiosos 3", "");
