@@ -8,7 +8,6 @@ public final class EntityManagerProvider {
 	private static volatile ThreadLocal<EntityManager> ENTITY_MANAGERS = new ThreadLocal<EntityManager>();
 	private static EntityManagerFactory entityManagerFactory;
 	private static final String persistenceUnit = "VoteNoFilme";
-	
 	private static void createEntityManagerFactory() {
 		if (entityManagerFactory == null) {
 			entityManagerFactory = Persistence.createEntityManagerFactory(persistenceUnit);

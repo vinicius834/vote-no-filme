@@ -1,7 +1,6 @@
 package br.org.votenofilme.util;
 
 import java.io.Serializable;
-
 import br.org.votenofilme.models.Film;
 
 public class FilmVote implements Serializable {

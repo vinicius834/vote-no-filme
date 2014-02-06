@@ -1,11 +1,8 @@
 package br.org.votenofilme.db.impl;
 
 import java.util.List;
-
-import br.com.caelum.vraptor.ioc.Component;
 import br.org.votenofilme.models.Film;
 
-@Component
 public class DataInitial {
 	private Film film = null;
 	private Film film1 = null;
