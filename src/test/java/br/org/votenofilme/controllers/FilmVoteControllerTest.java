@@ -8,8 +8,8 @@ import org.junit.Test;
 import br.com.caelum.vraptor.util.test.MockSerializationResult;
 import br.org.votenofilme.models.Film;
 import br.org.votenofilme.models.FilmPersonVote;
-import br.org.votenofilme.models.FilmVote;
 import br.org.votenofilme.models.Person;
+import br.org.votenofilme.util.FilmVote;
 
 public class FilmVoteControllerTest {
 

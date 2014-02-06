@@ -9,9 +9,8 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.Table;
-
 import br.org.votenofilme.db.impl.DAOImpl;
-
+import br.org.votenofilme.db.DAO;
 @Entity
 @Table(name="FILM_PERSON_VOTE")
 @AssociationOverrides({
@@ -21,7 +20,7 @@ import br.org.votenofilme.db.impl.DAOImpl;
 		joinColumns = @JoinColumn(name = "FILM_ID")) })
 public class FilmPersonVote implements Serializable, Comparable<FilmPersonVote> {
 	
-	private static final DAOImpl<FilmPersonVote, Long> DAO = new DAOImpl<FilmPersonVote, Long>(FilmPersonVote.class);
+	private static final DAO<FilmPersonVote, Long> DAO = new DAOImpl<FilmPersonVote, Long>(FilmPersonVote.class);
 	
 	@EmbeddedId
 	private FilmPersonVoteId filmPersonVoteId = new FilmPersonVoteId();

@@ -14,20 +14,19 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-
 import br.org.votenofilme.db.impl.DAOImpl;
+import br.org.votenofilme.db.DAO;
 
 @Entity
 @Table(name="PERSON")
 public class Person implements Serializable {
 
-	private static final DAOImpl<Person, Long> DAO = new DAOImpl<Person, Long>(Person.class);
+	private static final DAO<Person, Long> DAO = new DAOImpl<Person, Long>(Person.class);
 	
 	@Id
 	@Column(name = "PERSON_ID")
 	@SequenceGenerator(name="seq_person_id", sequenceName="PUBLIC.SEQ_PERSON_ID")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq_person_id")
-//	@GeneratedValue
 	private Long id;
 	
 	@Column(name="NAME", unique=true)

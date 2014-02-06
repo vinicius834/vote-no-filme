@@ -9,8 +9,8 @@ import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.view.Results;
 import br.org.votenofilme.models.Film;
 import br.org.votenofilme.models.FilmPersonVote;
-import br.org.votenofilme.models.FilmVote;
 import br.org.votenofilme.models.Person;
+import br.org.votenofilme.util.FilmVote;
 
 @Resource
 public class FilmVoteController {

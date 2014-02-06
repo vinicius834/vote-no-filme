@@ -10,7 +10,7 @@ import br.com.caelum.vraptor.util.test.MockSerializationResult;
 import br.org.votenofilme.classestotests.CreateFilmsToTest;
 import br.org.votenofilme.classestotests.CreateVotesToTest;
 import br.org.votenofilme.models.Film;
-import br.org.votenofilme.models.Ranking;
+import br.org.votenofilme.util.Ranking;
 
 public class RankingControllerTest {
 

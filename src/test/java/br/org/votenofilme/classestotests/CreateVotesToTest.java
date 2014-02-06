@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import br.org.votenofilme.models.Film;
 import br.org.votenofilme.models.FilmPersonVote;
-import br.org.votenofilme.models.FilmVote;
 import br.org.votenofilme.models.Person;
+import br.org.votenofilme.util.FilmVote;
 
 public class CreateVotesToTest {
 
