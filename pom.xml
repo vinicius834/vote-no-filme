@@ -100,18 +100,28 @@
 	</dependency>
 </dependencies>
 <build>
-    <sourceDirectory>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.16</version>
+			<configuration>
+				<skipTests>true</skipTests>
+			</configuration>
+		</plugin>
+	</plugins>
+	<sourceDirectory>
        ${project.basedir}/src/main/java
     </sourceDirectory>
-    <testSourceDirectory>
+	<testSourceDirectory>
        ${project.basedir}/src/test/java
     </testSourceDirectory>
-    <resources>
-          <resource>
-                 <directory>
+	<resources>
+		<resource>
+			<directory>
                  	 ${project.basedir}/src/main/resources
                  </directory>
-          </resource>
-    </resources>
+		</resource>
+	</resources>
 </build>
 </project>
