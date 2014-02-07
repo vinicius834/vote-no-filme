@@ -4,7 +4,7 @@
   <groupId>vote-no-filme</groupId>
   <artifactId>vote-no-filme</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>vote-no-filme</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -102,15 +102,15 @@
 </dependencies>
 <build>
     <sourceDirectory>
-      src/java/main
+       ${project.basedir}src/java/main
     </sourceDirectory>
     <testSourceDirectory>
-      src/java/test
+       ${project.basedir}src/java/test
     </testSourceDirectory>
     <resources>
           <resource>
                  <directory>
-                 	src/resources/main
+                 	 ${project.basedir}src/resources/main
                  </directory>
           </resource>
     </resources>
