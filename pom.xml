@@ -101,15 +101,15 @@
 </dependencies>
 <build>
     <sourceDirectory>
-       ${project.basedir}/src/java/main
+       ${project.basedir}/src/main/java
     </sourceDirectory>
     <testSourceDirectory>
-       ${project.basedir}/src/java/test
+       ${project.basedir}/src/test/java
     </testSourceDirectory>
     <resources>
           <resource>
                  <directory>
-                 	 ${project.basedir}/src/resources/main
+                 	 ${project.basedir}/src/main/resources
                  </directory>
           </resource>
     </resources>
