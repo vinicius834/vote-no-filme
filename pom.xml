@@ -4,6 +4,7 @@
   <groupId>vote-no-filme</groupId>
   <artifactId>vote-no-filme</artifactId>
   <packaging>war</packaging>
+  <version>0.0.1</version>
   <name>vote-no-filme</name>
   <url>http://maven.apache.org</url>
   <dependencies>
