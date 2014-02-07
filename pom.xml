@@ -101,15 +101,39 @@
 </dependencies>
 <build>
 	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-			<version>2.16</version>
-			<configuration>
-				<skipTests>true</skipTests>
-			</configuration>
-		</plugin>
-	</plugins>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<version>2.16</version>
+		<configuration>
+			<skipTests>true</skipTests>
+		</configuration>
+	</plugin>
+	<plugin>
+		<artifactId>maven-antrun-plugin</artifactId>
+		<version>1.7</version>
+		<executions>
+			<execution>
+				<phase>prepare-package</phase>
+				<configuration>
+					<tasks>
+						<copy file="${basedir}/src/main/webapp/WEB-INF/web.xml"
+							todir="${project.build.directory}" />
+						<java fork="true" classname="br.com.caelum.vraptor.scan.VRaptorStaticScanning"
+							classpathref="maven.compile.classpath">
+							<arg value="${project.build.directory}/web.xml" />
+							<classpath refid="maven.compile.classpath" />
+							<classpath path="${project.build.outputDirectory}" />
+						</java>
+					</tasks>
+				</configuration>
+				<goals>
+					<goal>run</goal>
+				</goals>
+			</execution>
+		</executions>
+	</plugin>
+</plugins>
 	<sourceDirectory>
        ${project.basedir}/src/main/java
     </sourceDirectory>
